@@ -61,12 +61,25 @@ function student() {
         { name: 'Joseph', r_num: '456', dob: '05-jan-1998' }
     ];
 
-    for (var i = 0; i < stu_obj.length; i++) {
+    /*for (var i = 0; i < stu_obj.length; i++) {
         var n = stu_obj[i].name;
         var r = stu_obj[i].r_num;
         var d = stu_obj[i].dob;
         var str = "<br>" + "Name: " + n + "<br>" + "Register Number: " + r + "<br>" + "Date Of Birth: " + d + "<br>";
         document.getElementById('stu' + (i+1)).innerHTML = str;
-
-    }
+    }*/
+    
+    document.getElementById('less').innerHTML = "Less than 2000";
+    var n = stu_obj[0].name;
+    var r = stu_obj[0].r_num;
+    var d = stu_obj[0].dob;
+    var str = "<br>" + "Name: " + n + "<br>" + "Register Number: " + r + "<br>" + "Date Of Birth: " + d + "<br>";
+    document.getElementById('stu1').innerHTML = str;
+    
+    document.getElementById('great').innerHTML = "Greater than 2000";
+    var n = stu_obj[1].name;
+    var r = stu_obj[1].r_num;
+    var d = stu_obj[1].dob;
+    var str = "<br>" + "Name: " + n + "<br>" + "Register Number: " + r + "<br>" + "Date Of Birth: " + d + "<br>";
+    document.getElementById('stu2').innerHTML = str;
 }
